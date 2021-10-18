@@ -1,0 +1,15 @@
+{
+  "name": "solana-tutorial",
+  "version": "1.0.0",
+  "description": "solana tutorial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Riddhesh Ganatra",
+  "license": "ISC",
+  "dependencies": {
+    "@solana/spl-token": "^0.1.8",
+    "@solana/web3.js": "^1.29.2"
+  }
+}
