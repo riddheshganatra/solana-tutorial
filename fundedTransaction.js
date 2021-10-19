@@ -61,7 +61,7 @@ setTimeout(() => {
 
     fundedTransaction.partialSign(fromWallet);
 
-    // encoding tranaction so that we can send it to chingari backend
+    // encoding tranaction so that we can send it to backend
     let endocdeTransction = fundedTransaction.serialize({
       requireAllSignatures: false,
       verifySignatures: false,
