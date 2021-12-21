@@ -57,7 +57,7 @@ function sleep(time) {
 
   // partially sign transaction
   let blockhashObj = await connection.getRecentBlockhash();
-  fundedTransaction.recentBlockhash = await blockhashObj.blockhash;
+  fundedTransaction.recentBlockhash = blockhashObj.blockhash;
 
   fundedTransaction.partialSign(fromWallet);
 
@@ -69,6 +69,10 @@ function sleep(time) {
 
   // can be transfered over API if required
   endocdeTransction = endocdeTransction.toJSON()
+
+  //  network latency
+  await sleep(1000)
+
 
   let transactionFromJson = web3.Transaction.from(Buffer.from(endocdeTransction, 'base64'));
 
